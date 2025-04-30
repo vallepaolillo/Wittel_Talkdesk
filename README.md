@@ -86,7 +86,7 @@
 
     <h3>Contato</h3>
     <p><strong>Email:</strong> contato@wittel.com</p>
-    <p><strong>Telefone:</strong> +55 11 3879-3001</p>
+    <p><strong>Telefone:</strong> +55 11 3879-3002</p>
     <p><strong>Endereço:</strong> Av. Francisco Matarazzo, 1500 – Água Branca, São Paulo – SP</p>
   </section>
 
@@ -123,19 +123,14 @@
            * If you would like to do it, you need to remove the following commented code and
            * modify the webchat.setContextParam parameters to pass in the data you need.
            */
-           /*function setContext() {
-             webchat.setContextParam({ "var1": "value1", "var2": "value2", "var3": 100 })
+          function setContext() {
+             webchat.setContextParam({ field_name1: contact_name })
            }
            // Send data when the chat conversation is initiated
            webchat.onConversationStart = function() {
              setContext()
            }
-           // Send data when the chat widget is open
-           webchat.onOpenWebchat = function() {
-             setContext()
-           }*/
-
-        
+                   
       };
     })(
       window,
